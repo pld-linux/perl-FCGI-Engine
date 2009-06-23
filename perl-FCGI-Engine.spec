@@ -7,27 +7,26 @@
 %define	pnam	Engine
 Summary:	FCGI::Engine - A flexible engine for running FCGI-based applications
 Name:		perl-FCGI-Engine
-Version:	0.05
+Version:	0.08
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/FCGI/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	ec002415ba2e48c3c6d01a8bf6463df0
+# Source0-md5:	c06b4ecda7ffd8838a91b68c37469781
 URL:		http://search.cpan.org/dist/FCGI-Engine/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
+BuildRequires:	perl(Declare::Constraints::Simple)
+BuildRequires:	perl(MooseX::Daemonize) >= 0.06
+BuildRequires:	perl(MooseX::Getopt) >= 0.14
+BuildRequires:	perl(MooseX::Types::Path::Class)
 BuildRequires:	perl-CGI-Simple
-BuildRequires:	perl-Config::Any
-BuildRequires:	perl-Declare::Constraints-Simple
+BuildRequires:	perl-Config-Any
 BuildRequires:	perl-FCGI
 BuildRequires:	perl-Moose >= 0.32
 BuildRequires:	perl-MooseX-AttributeHelpers >= 0.06
-BuildRequires:	perl-MooseX-Daemonize >= 0.06
-BuildRequires:	perl-MooseX-Getopt >= 0.14
-BuildRequires:	perl-MooseX-Params::Validate >= 0.04
-BuildRequires:	perl-MooseX-Types-Path-Class
 BuildRequires:	perl-Test-Exception
 BuildRequires:	perl-Test-WWW-Mechanize
 %endif

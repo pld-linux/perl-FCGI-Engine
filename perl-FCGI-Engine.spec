@@ -7,13 +7,13 @@
 %define	pnam	Engine
 Summary:	FCGI::Engine - A flexible engine for running FCGI-based applications
 Name:		perl-FCGI-Engine
-Version:	0.08
+Version:	0.10
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/FCGI/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	c06b4ecda7ffd8838a91b68c37469781
+# Source0-md5:	d94d0e0aa281a499637dff85e744e37c
 URL:		http://search.cpan.org/dist/FCGI-Engine/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13

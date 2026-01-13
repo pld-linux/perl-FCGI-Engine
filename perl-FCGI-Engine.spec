@@ -7,7 +7,7 @@
 Summary:	FCGI::Engine - A flexible engine for running FCGI-based applications
 Name:		perl-FCGI-Engine
 Version:	0.21
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
